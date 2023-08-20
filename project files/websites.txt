@@ -1,0 +1,33 @@
+Roadmap.sh - Java, https://roadmap.sh/java, The Java roadmap on Roadmap.sh outlines a step-by-step guide to mastering Java programming, tags - roadmap, java, interview prep
+Roadmap.sh - Frontend, https://roadmap.sh/frontend, The Frontend roadmap on Roadmap.sh offers a comprehensive visual guide that outlines the skills and technologies needed to become proficient in frontend web development, tags - roadmap, frontend, interview prep
+Roadmap.sh - React, https://roadmap.sh/react, The React roadmap on Roadmap.sh provides a clear visual representation of the skills and concepts required to become proficient in React development, tags - roadmap, frontend, interview prep
+Roadmap.sh - Spring Boot, https://roadmap.sh/spring-boot, The Spring Boot roadmap on Roadmap.sh offers a visual guide outlining the key skills and knowledge needed to excel in Spring Boot development, tags - roadmap, java, interview prep
+Most trusted 90 days roadmap to placement , https://takeuforward.org/interviews/most-trusted-90-days-roadmap-to-placement-guaranteed/, structured plan for interview preparation, guiding individuals through essential topics with links to courses and skills needed to secure job placements, tags - roadmap, interview prep
+scrimba, https://scrimba.com/dashboard , user can code along within the video and embed interactive code snippets., tags - learn, frontend
+the odin project, https://www.theodinproject.com/home, It offers a free, extensive curriculum for self-taught web developers, prioritizing practical projects and real-world skills, tags - learn, frontend
+frontend practice, https://www.frontendpractice.com/, practice by recreating real websites from real companies , tags - practice, frontend
+clientside, https://www.clientside.dev/, Solve Javascript exercises and build React coding projects from actual frontend interviews, tags - practice, frontend, interview prep.
+BigFrontEnd, https://bigfrontend.dev/, tries to be the "LeetCode for Front-End", tags - practice, frontend, interview prep
+ThatJsDude, https://www.thatjsdude.com/interview/index.html, Curated list of questions for frontend interviews,tags - practice, frontend, interview prep
+ARIA Authoring Practices Guide (APG), https://www.w3.org/WAI/ARIA/apg/patterns/, This resource from W3 provides practical usage patterns for implementing ARIA, offering valuable insights for web accessibility enhancement., tags - learn, frontend, interview prep.
+Coolors, https://coolors.co/, user-friendly color palette generator, tags - tools, design inspo, frontend
+1mb club, https://1mb.club/, creative platform for showcasing projects that are limited to a 1MB file size, encouraging innovative and compact digital creations, tags - design insp, frontend
+DevDocs, https://devdocs.io/, DevDocs combines multiple API documentations in a fast, organized, and searchable interface, tags - tools, documentation
+Mozilla Developer Network, https://developer.mozilla.org/, omprehensive resource for web developers, providing detailed documentation, guides, and tutorials on web technologies and standards, tags - tools, documentation
+HackerRank Java, https://www.hackerrank.com/domains/java, HackerRank's Java domain offers a wide range of coding challenges and exercises to enhance Java programming skills through hands-on practice, tags - Java, Practice
+GeeksForGeeks Java, https://practice.geeksforgeeks.org/explore?page=1&category[]=Java&sortBy=submissions, Collection of coding problems that focus on enhancing Java programming skills, tags - java, practice
+Strivers A2Z DSA Course/Sheet, https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/, Comprehensive educational resource that covers a wide array of Data Structures and Algorithms topics, providing learners with a structured and organized approach to mastering these fundamental concepts, tags - DSA, interview prep, java, practice
+Striver’s SDE Sheet, https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/, targeted study resource designed to help SDEs enhance their coding and problem-solving skills, offering a curated collection of practice problems and algorithms for technical interview preparation, tags - DSA, interview prep, java, practice
+Blind 75 LeetCode Questions, https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions, Compilation of a set of essential coding challenges frequently encountered in technical interviews, tags - DSA, interview prep, java, practice
+Grind 75 questions, https://www.techinterviewhandbook.org/grind75, curated list of technical interview questions designed to aid individuals in focused preparation, tags - DSA, interview prep, java, practice
+GFG top 50 array questions, https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/, Top 50 list of frequently asked interviews question on arrays, tags - practice, interview prep, java
+Javatpoint 300 Core Java Interview Questions, https://www.javatpoint.com/corejava-interview-questions, compilation of commonly asked questions in core Java interviews, tags - java, interview prep
+Baeldung, https://www.baeldung.com/, offers valuable resources for understanding and mastering Spring-based application development
+Neetcode 150, https://neetcode.io/practice, Neetcode 150 is a curated list of 150 LeetCode problems designed to cover all possible patterns & topics in data structures., tags - DSA, interview prep, java, practice
+Pepcoding Java, https://www.pepcoding.com/resources/online-java-foundation, omprehensive set of learning materials aimed at building a strong foundation in Java programming, tags - Java, learn
+PostgreSQl , https://www.postgresql.org/docs/current/index.html, The PostgreSQL documentation provides an extensive and detailed guide to using PostgreSQL, tags - learn, database
+PostgreSQL Tutorial, https://www.postgresqltutorial.com/, The PostgreSQL Tutorial offers a user-friendly and practical guide for learning and mastering PostgreSQL, tags - learn, database
+PostgreSQL Exercises, https://pgexercises.com/,  PGExercises provides a series of questions and explanations built on a single, simple dataset. It's designed for use as a partner to Postgres' excellent documentation. tags - practice, database
+
+
+

@@ -1,80 +1,97 @@
-import { Box, Paper } from "@mui/material"
-import { DataGrid, GridColDef, GridToolbar, GridValueGetterParams } from "@mui/x-data-grid"
+import { Box, Chip, Link, Paper } from "@mui/material";
+import { DataGrid, GridColDef, GridToolbar } from "@mui/x-data-grid";
+import { rows } from "../assets/data";
+import {
+  ReactElement,
+  JSXElementConstructor,
+  ReactNode,
+  ReactPortal,
+  Key,
+} from "react";
+
+const tagColors: { [tag: string]: string } = {
+  roadmap: "#261B1C",
+  java: "#29462C",
+  frontend: "#C8272A",
+  practice: "#E3C0D3",
+  "interview prep": "#A8BA9A",
+  "design inspo": "#D5BF86",
+  learn: "#D1CCDC",
+  database: "#8C4B47", // You can choose another color here
+};
 
 const columns: GridColDef[] = [
-    { field: 'id', headerName: 'ID', width: 90 },
-    {
-      field: 'firstName',
-      headerName: 'First name',
-      width: 150,
-      editable: true,
-    },
-    {
-      field: 'lastName',
-      headerName: 'Last name',
-      width: 150,
-      editable: true,
-    },
-    {
-      field: 'age',
-      headerName: 'Age',
-      type: 'number',
-      width: 110,
-      editable: true,
-    },
-    {
-      field: 'fullName',
-      headerName: 'Full name',
-      description: 'This column has a value getter and is not sortable.',
-      sortable: false,
-      width: 160,
-      valueGetter: (params: GridValueGetterParams) =>
-        `${params.row.firstName || ''} ${params.row.lastName || ''}`,
-    },
-  ];
-  
-  const rows = [
-    { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
-    { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
-    { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
-    { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16 },
-    { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null },
-    { id: 6, lastName: 'Melisandre', firstName: null, age: 150 },
-    { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
-    { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
-    { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
-  ];
-  
-
+  { field: "id", headerName: "ID", width: 90 },
+  {
+    field: "websiteName",
+    headerName: "Website Name",
+    width: 180,
+  },
+  {
+    field: "websiteLink",
+    headerName: "Link",
+    width: 200,
+    renderCell: (params) => (
+      <Link href={params.value} target="_blank" rel="noopener noreferrer">
+        {params.value}
+      </Link>
+    ),
+  },
+  {
+    field: "description",
+    headerName: "Description",
+    width: 600,
+  },
+  {
+    field: "tags",
+    headerName: "Tags",
+    width: 400,
+    renderCell: (params) => (
+      <Box>
+        {params.value.split(", ").map((tag, index) => (
+          <Chip
+            key={index}
+            label={tag}
+            style={{ backgroundColor: tagColors[tag.toLowerCase()] || "#000" }} // Default to black if tag color is not found
+            sx={{
+              margin: 1,
+              color: "white",
+              textTransform: "capitalize",
+            }}
+          />
+        ))}
+      </Box>
+    ),
+  },
+];
 
 const HeroPage = () => {
   return (
-    <><Paper sx={{margin: "1vh"}} elevation={3}>
-    <Box sx={{ height: "83vh", width: '100%' }}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        slots={{ toolbar: GridToolbar }}
-        disableRowSelectionOnClick
-        sx={{
-            '& .MuiDataGrid-virtualScroller::-webkit-scrollbar': {
-              width: '0.4em',
+    <Paper sx={{ margin: "3vh" }} elevation={3}>
+      <Box sx={{ height: "75vh" }}>
+        <DataGrid
+          rows={rows}
+          columns={columns}
+          slots={{ toolbar: GridToolbar }}
+          disableRowSelectionOnClick
+          sx={{
+            "& .MuiDataGrid-virtualScroller::-webkit-scrollbar": {
+              width: "0.4em",
             },
-            '& .MuiDataGrid-virtualScroller::-webkit-scrollbar-track': {
-              background: '#f1f1f1',
+            "& .MuiDataGrid-virtualScroller::-webkit-scrollbar-track": {
+              background: "#f1f1f1",
             },
-            '& .MuiDataGrid-virtualScroller::-webkit-scrollbar-thumb': {
-              backgroundColor: '#888',
+            "& .MuiDataGrid-virtualScroller::-webkit-scrollbar-thumb": {
+              backgroundColor: "#888",
             },
-            '& .MuiDataGrid-virtualScroller::-webkit-scrollbar-thumb:hover': {
-              background: '#555',
+            "& .MuiDataGrid-virtualScroller::-webkit-scrollbar-thumb:hover": {
+              background: "#555",
             },
           }}
-      />
-    </Box>
-        
-        </Paper></>
-  )
-}
+        />
+      </Box>
+    </Paper>
+  );
+};
 
-export default HeroPage
+export default HeroPage;
